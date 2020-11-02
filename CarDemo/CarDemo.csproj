@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3A12940E-FB8B-455D-9A83-2E2A49C2A78E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CarDemo</RootNamespace>
+    <AssemblyName>CarDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recoginzation.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="MYsource\char\0.bmp" />
+    <Content Include="MYsource\char\0_0.bmp" />
+    <Content Include="MYsource\char\0_2.bmp" />
+    <Content Include="MYsource\char\1.bmp" />
+    <Content Include="MYsource\char\2.bmp" />
+    <Content Include="MYsource\char\2_1.bmp" />
+    <Content Include="MYsource\char\2_2.bmp" />
+    <Content Include="MYsource\char\3.bmp" />
+    <Content Include="MYsource\char\3_1.bmp" />
+    <Content Include="MYsource\char\4.bmp" />
+    <Content Include="MYsource\char\5_0.bmp" />
+    <Content Include="MYsource\char\6.bmp" />
+    <Content Include="MYsource\char\6_0.bmp" />
+    <Content Include="MYsource\char\6_1.bmp" />
+    <Content Include="MYsource\char\6_2.bmp" />
+    <Content Include="MYsource\char\7.bmp" />
+    <Content Include="MYsource\char\8.bmp" />
+    <Content Include="MYsource\char\8_1.bmp" />
+    <Content Include="MYsource\char\8_2.bmp" />
+    <Content Include="MYsource\char\8_3.bmp" />
+    <Content Include="MYsource\char\8_4.bmp" />
+    <Content Include="MYsource\char\8_5.bmp" />
+    <Content Include="MYsource\char\8_6.bmp" />
+    <Content Include="MYsource\char\8_7.bmp" />
+    <Content Include="MYsource\char\8_8.bmp" />
+    <Content Include="MYsource\char\8_9.bmp" />
+    <Content Include="MYsource\char\9.bmp" />
+    <Content Include="MYsource\char\9_1.bmp" />
+    <Content Include="MYsource\char\9_2.bmp" />
+    <Content Include="MYsource\char\9_3.bmp" />
+    <Content Include="MYsource\char\9_4.bmp" />
+    <Content Include="MYsource\char\A.bmp" />
+    <Content Include="MYsource\char\A_1.bmp" />
+    <Content Include="MYsource\char\A_2.bmp" />
+    <Content Include="MYsource\char\A_3.bmp" />
+    <Content Include="MYsource\char\A_4.bmp" />
+    <Content Include="MYsource\char\B.bmp" />
+    <Content Include="MYsource\char\B_0.bmp" />
+    <Content Include="MYsource\char\C.bmp" />
+    <Content Include="MYsource\char\D.bmp" />
+    <Content Include="MYsource\char\D_1.bmp" />
+    <Content Include="MYsource\char\E.bmp" />
+    <Content Include="MYsource\char\E_1.bmp" />
+    <Content Include="MYsource\char\E_2.bmp" />
+    <Content Include="MYsource\char\E_3.bmp" />
+    <Content Include="MYsource\char\E_4.bmp" />
+    <Content Include="MYsource\char\F.bmp" />
+    <Content Include="MYsource\char\G.bmp" />
+    <Content Include="MYsource\char\G_1.bmp" />
+    <Content Include="MYsource\char\G_2.bmp" />
+    <Content Include="MYsource\char\H.bmp" />
+    <Content Include="MYsource\char\J.bmp" />
+    <Content Include="MYsource\char\K.bmp" />
+    <Content Include="MYsource\char\L.bmp" />
+    <Content Include="MYsource\char\L_2.bmp" />
+    <Content Include="MYsource\char\L_3.bmp" />
+    <Content Include="MYsource\char\M.bmp" />
+    <Content Include="MYsource\char\M_1.bmp" />
+    <Content Include="MYsource\char\N.bmp" />
+    <Content Include="MYsource\char\O.bmp" />
+    <Content Include="MYsource\char\P.bmp" />
+    <Content Include="MYsource\char\Q.bmp" />
+    <Content Include="MYsource\char\Q_1.bmp" />
+    <Content Include="MYsource\char\Q_2.bmp" />
+    <Content Include="MYsource\char\R.bmp" />
+    <Content Include="MYsource\char\S.bmp" />
+    <Content Include="MYsource\char\S_1.bmp" />
+    <Content Include="MYsource\char\S_2.bmp" />
+    <Content Include="MYsource\char\S_3.bmp" />
+    <Content Include="MYsource\char\S_4.bmp" />
+    <Content Include="MYsource\char\S_5.bmp" />
+    <Content Include="MYsource\char\S_6.bmp" />
+    <Content Include="MYsource\char\T_0.bmp" />
+    <Content Include="MYsource\char\U_1.bmp" />
+    <Content Include="MYsource\char\V_0.bmp" />
+    <Content Include="MYsource\char\V_1.bmp" />
+    <Content Include="MYsource\char\W.bmp" />
+    <Content Include="MYsource\char\X.bmp" />
+    <Content Include="MYsource\char\Y.bmp" />
+    <Content Include="MYsource\char\Z.bmp" />
+    <Content Include="MYsource\font\京.bmp" />
+    <Content Include="MYsource\font\沪.bmp" />
+    <Content Include="MYsource\font\津.bmp" />
+    <Content Include="MYsource\font\浙.bmp" />
+    <Content Include="MYsource\font\粤.bmp" />
+    <Content Include="MYsource\font\粤_0.bmp" />
+    <Content Include="MYsource\font\粤_1.bmp" />
+    <Content Include="MYsource\font\粤_2.bmp" />
+    <Content Include="MYsource\font\粤_3.bmp" />
+    <Content Include="MYsource\font\苏_0.bmp" />
+    <Content Include="MYsource\font\苏_1.bmp" />
+    <Content Include="MYsource\font\苏_2.bmp" />
+    <Content Include="MYsource\font\苏_3.bmp" />
+    <Content Include="MYsource\font\苏_4.bmp" />
+    <Content Include="MYsource\font\苏_5.bmp" />
+    <Content Include="MYsource\font\苏_6.bmp" />
+    <Content Include="MYsource\font\苏_7.bmp" />
+    <Content Include="MYsource\font\苏_8.bmp" />
+    <Content Include="MYsource\font\苏_9.bmp" />
+    <Content Include="MYsource\font\豫.bmp" />
+    <Content Include="MYsource\font\贵.bmp" />
+    <Content Include="MYsource\font\鄂.bmp" />
+    <Content Include="MYsource\font\陕.bmp" />
+    <Content Include="MYsource\Resource\0.bmp" />
+    <Content Include="MYsource\Resource\1.bmp" />
+    <Content Include="MYsource\Resource\2.bmp" />
+    <Content Include="MYsource\Resource\3.bmp" />
+    <Content Include="MYsource\Resource\4.bmp" />
+    <Content Include="MYsource\Resource\5.bmp" />
+    <Content Include="MYsource\Resource\6.bmp" />
+    <None Include="MYsource\汽车.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
